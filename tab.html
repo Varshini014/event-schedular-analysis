@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<style>
+
+     body{
+  background-image: url("eve.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+table{margin-top:300px;
+margin-left:500px;
+}
+</style>
+
+<body>
+<center>
+
+    <h2>Enter your details here</h2>
+    <form action="student1.php" method="post">
+        <label for="eventno">Eventno:</label>
+        <input type="text" id="eventno" name="eventno"><br><br>
+        <label for="clubname">Clubname:</label>
+        <input type="text" id="clubname" name="clubname"><br><br>
+	<label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br><br>
+	<label for="venue">Venue:</label>
+        <input type="text" id="venue" name="venue"><br><br>
+	<label for="time">Time:</label>
+        <input type="time" id="time" name="time"><br><br>
+	<label for="eventname">Eventname:</label>
+        <input type="text" id="eventname" name="eventname"><br><br>
+        <select id="mode" name="mode" required>
+            <option value="online">Online</option>
+            <option value="offline">Offline</option>
+	<input type="submit" value="Submit">
+</center>
+    </form>
+</body>
+</html>

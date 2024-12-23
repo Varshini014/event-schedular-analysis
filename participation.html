@@ -1,0 +1,75 @@
+<html>  
+<head>  
+    <title>Participation registration</title>  
+    
+  </head> 
+
+<body bgcolor="babypink">
+
+
+    <div id = "frm">  
+        <h1>REGISTRATION</h1>  
+        <form  action = "authentication.php"  method = "POST">  
+            <p>  
+                <label> Name: </label>    
+                <input type = "text" id ="name" name  = "name" />  
+            </p>  
+            <p>  
+                <label> Rollno: </label>  
+                <input type = "text" id ="rollno" name  = "rollno" />  
+            </p> 
+            <p>  
+                <label> Class: </label>    
+                <input type = "text" id ="class" name  = "class" />  
+            </p>  
+             <p>  
+                <label> Eventno: </label>    
+                <input type = "text" id ="eventno" name  = "eventno" />  
+            </p>
+	    <p>  
+                <label> Eventname: </label>    
+                <input type = "text" id ="eventname" name  = "eventname" />  
+            </p>   
+            <p>     
+                <input type =  "submit" id = "btn" value = "register" />  
+            </p>  
+        </form>  
+    </div>  
+    
+    <script> 
+ function validation()  
+            {  
+                var na=document.f1.name.value;  
+                var ro=document.f1.rollno.value;  
+		var cl=document.f1.class.value;
+		var ev=document.f1.eventno.value;
+		var en=document.f1.eventname.value;
+                if(na.length=="" && ro.length=="" && cl.length=="" && ev.length=="" && en.length=="") {  
+                    alert("Name or rollno or class or event is empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(na.length=="") {  
+                        alert("name is empty");  
+                        return false;  
+                    }   
+                    if (ro.length=="") {  
+                    alert("rollno field is empty");  
+                    return false;  
+                    }  
+		    if (cl.length==""){
+		    alert("class feild is empty");
+		    return false;
+		    }
+		    if (cl.length==""){
+		    alert("class feild is empty");
+		    return false;
+		    }
+		    
+                }                             
+            }  
+        </script>  
+
+</body>     
+</html>  

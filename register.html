@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>REGISTER</title>
+</head>
+<style>
+     body{
+  background-image: url("eve.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:1370px;610px;
+}
+table{margin-top:300px;
+margin-left:500px;
+}
+</style>
+</head>
+<body><center>
+
+<h2>WELCOME TO CLUB EVENT SCHEDULAR<h2>
+<h2><marquee> ... Please register here to login...</marquee></h2>
+</center>
+<form action="register.php" method="post"><center>
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    </div><br>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </div><br>
+    <div>
+        <label for="role">Role:</label>
+        <select id="role" name="role">
+            <option value="admin">Admin</option>
+            <option value="student">Student</option>
+            <option value="guest">Guest</option>
+            <option value="club">Club</option>
+        </select><br>
+    </div<br><br>
+    <div>
+        <button type="submit">Register</button>
+    </div><br>
+</form>
+<h3><a href="login.html">LOGIN</a></h3>
+</center>
+</body>
+</html>

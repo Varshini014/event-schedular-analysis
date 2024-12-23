@@ -1,0 +1,68 @@
+<html>  
+<head>  
+    <title>REGISTRATION system</title>  
+    
+  </head> 
+<body bgcolor="babypink">
+
+    <div id = "frm">  
+        <h1>REGISTRATION</h1>  
+        <form  action = "registration.php"  method = "POST">  
+            <p>  
+                <label> Registerno: </label>    
+                <input type = "text" id ="register" name  = "registerno" />  
+            </p>  
+            <p>  
+                <label> Name: </label>  
+                <input type = "text" id ="name" name  = "name" />  
+            </p> 
+            <p>  
+                <label> Class: </label>    
+                <input type = "text" id ="class" name  = "class" />  
+            </p>  
+             <p>  
+                <label> Clubname: </label>    
+                <input type = "text" id ="club" name  = "club" />  
+            </p>   
+            <p>     
+                <input type =  "submit" id = "btn" value = "register" />  
+            </p>  
+        </form>  
+    </div>  
+    
+    <script>
+?>php  
+ function validation()  
+            {  
+                var rn=document.f1.registerno.value;  
+                var na=document.f1.name.value;  
+		var cl=document.f1.class.value;
+		var cn=document.f1.club.value;
+                if(rn.length=="" && na.length=="" && cl.length=="" && cn.length=="") {  
+                    alert(" Register No and Name and Class and Clubname fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(rn.length=="") {  
+                        alert("Registerno is empty");  
+                        return false;  
+                    }   
+                    if (na.length=="") {  
+                    alert("name field is empty");  
+                    return false;  
+                    }  
+		    if (cl.length==""){
+		    alert("class feild is empty");
+		    return false;
+		    }
+		    if(cn.length==""){
+		    alert("clubname feild is empty");
+		    return false;
+		    }
+                }                             
+            }  
+        </script>  
+
+</body>     
+</html>  
